@@ -1,0 +1,21 @@
+{:paths ["src" "zrc"]
+ :deps {org.clojure/clojure               {:mvn/version "1.10.3"}
+        hiccup/hiccup                     {:mvn/version "2.0.0-alpha2"}
+        http-kit/http-kit                 {:mvn/version "2.5.3"}
+        org.clojure/java.jdbc             {:mvn/version "0.7.12"}
+        org.postgresql/postgresql         {:mvn/version "42.3.3"}
+        route-map/route-map               {:mvn/version "0.0.7"}
+        cheshire/cheshire                 {:mvn/version "5.10.2"}
+        com.github.seancorfield/next.jdbc {:mvn/version "1.2.780"}
+        com.github.seancorfield/honeysql {:mvn/version "2.2.891"}
+        healthsamurai/matcho            {:mvn/version "0.3.9"}}
+ :aliases
+ {:nrepl
+  {:extra-paths []
+   :extra-deps  {cider/cider-nrepl {:mvn/version "LATEST"}}
+   :jvm-opts ^:replace ["-XX:-OmitStackTraceInFastThrow"]
+
+   :main-opts   ["-m" "nrepl.cmdline"
+                 "-b" "0.0.0.0"
+                 "--middleware"
+                 "[cider.nrepl/cider-middleware]"]}}}

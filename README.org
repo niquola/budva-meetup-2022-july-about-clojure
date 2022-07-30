@@ -1,0 +1,88 @@
+#TITLE: About Clojure
+
+Nikolai Ryzhikov CoF & CTO of Health Samurai
+
+2022 July, Budva
+
+
+* Health Samurai
+
+ * we are crafting FHIR+ platform for healthcare apps
+ * on of the biggest in Europa clojurians company ~50
+
+* Why clojure?
+
+ * piece of art (simplicity)
+ * functional paradigm
+ * performance
+ * parallelism & concurrency
+ * isomorphic - backend, frontend, babashka
+ * java & js eco-system
+ * work in Health Samurai
+
+* ART
+
+ * simplicity
+ * conceptual consistency
+ * no one breaking change
+  
+---  
+
+  Promises in js from clj
+  
+* FP
+
+FP is extremely simple
+
+ * design with functions - procedures - good component
+ * pure functions - ideal
+ * 20/80 dirty
+
+* Performance & Concurrency   
+
+ * it is fast - can be as fast as Java
+ * java memory model 
+  
+   
+* Isomorphic * Eco-system
+
+ * all java & js libraries
+ * react story
+ * back/front & babashka 
+
+* Links
+
+ * Greatest Hits - https://changelog.com/posts/rich-hickeys-greatest-hits
+ * History 
+ 
+* Interactive development!
+
+ * REPL as a quintessence of clojure design
+ * emacs (spacemacs) + cider <<-
+  
+* Clojure is JS--
+
+ - syntax - LISP
+ - classes & objects
+ - mutable state
+  
+* How to read clojure
+
+(a b c) => [a, b, c]
+
+1 + 1 => (+ 1 1)
+fn(a,b) => (fn a b)
+if(cond) {} else {} => (if (cond) (expr) (expr))
+funct(){...} => (func [args] ...)
+
+* Developers UX!
+
+ * setup emacs
+ * learn bindings
+ * start REPL
+
+* Run presentation
+
+docker-compose up -d
+emacs src/budva/core.clj
+:cider-jack-in
